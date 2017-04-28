@@ -1,0 +1,26 @@
+<div>
+    <div class="row">
+        <div class="col-md-1"><img src="img/pois/cgpImg.jpg" height="60px;" width="60px;"></div>
+        <div class="col-md-4">
+            <div class="row"><h3>Direccion: {{cgpCrtl.poi.direccion}}</h3></div>
+            <div class="row"><h3>Zona: {{cgpCrtl.poi.zona}}</h3></div>
+            <div class="row"><h3>Lista de servicios: {{cgpCrtl.poi.lista}}</h3></div>
+        </div>
+    </div>
+
+    <div>
+        <h3>Favorito </h3>
+        <fieldset class="form-group">
+            <input type="checkbox" id="checkbox1" ng-checked="cgpCrtl.favoritiar" ng-click="cgpCrtl.enviarFavorito();">
+            <label for="checkbox1"></label>
+        </fieldset>
+    </div>
+
+    <opiniones-pois></opiniones-pois>
+
+    <div>
+        <a class="btn btn-primary" ui-sref="listadoPois">
+            Go Back
+        </a>
+    </div>
+</div>

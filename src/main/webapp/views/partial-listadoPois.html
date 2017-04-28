@@ -1,0 +1,35 @@
+<div>
+
+    <h3>Buscador</h3>
+    <div>
+        <input type="text" id="nombrePoi" placeholder="Buscar" max="25" ng-model="aBuscar">
+    </div>
+
+    <div>
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Favorito</th>
+                <th>Info</th>
+            </tr>
+            <tr ng-repeat="poi in listadoCtrl.pois | filter:aBuscar">
+                <td>{{poi.nombre}}</td>
+                <td>{{poi.direccion}}</td>
+                <td>
+                    <div class="togglebutton">
+                        <label>
+                            <input type="checkbox" ng-checked={{poi.favorito}}
+                            >
+                        </label>
+                    </div>
+                </td>
+                <td class="center">
+                    <!--<a ui-sref="{{poi.tipoDePoi}}({id: poi.id})" class="btn btn-info-outline waves-effect"><i class="fa fa-pencil-square-o"></i></a>-->
+                    <a ng-click="listadoCtrl.mostrarInfo(poi);" class="btn btn-info-outline waves-effect"><i class="fa fa-pencil-square-o"></i></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

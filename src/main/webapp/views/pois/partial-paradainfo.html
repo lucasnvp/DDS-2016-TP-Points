@@ -1,0 +1,26 @@
+<div>
+    <div>
+        <div class="col-md-1"><img src="img/pois/paradaDeColectivoImg.gif" height="60px;" width="60px;"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Nro De Linea: {{paradaCrtl.poi.nombre}}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>Favorito </h3>
+        <fieldset class="form-group">
+            <input type="checkbox" id="checkbox1" ng-checked="paradaCrtl.favoritiar" ng-click="paradaCrtl.enviarFavorito();">
+            <label for="checkbox1"></label>
+        </fieldset>
+    </div>
+
+    <opiniones-pois></opiniones-pois>
+
+    <div>
+        <a class="btn btn-primary" ui-sref="listadoPois">
+            Go Back
+        </a>
+    </div>
+</div>

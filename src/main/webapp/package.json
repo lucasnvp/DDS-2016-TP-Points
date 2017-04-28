@@ -1,0 +1,27 @@
+{
+  "name": "webui-grupo10",
+  "version": "1.0.0",
+  "description": "Interfaz de usuario para el proyecto de PoIs del grupo 10.",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^1.0.0-beta.2",
+    "font-awesome": "^4.6.3",
+    "lodash": "^4.11.2",
+    "bootstrap": "^3.3.5",
+    "mdbootstrap": "^4.1.1",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "pois",
+    "grupo",
+    "10"
+  ],
+  "author": "Grupo 10",
+  "license": "MIT"
+}

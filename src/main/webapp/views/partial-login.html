@@ -1,0 +1,19 @@
+<div class="flex-center">
+    <div>
+        <div><h1>POI CABA login</h1></div>
+        <div><p>Ingrese su usuario y contrase&ntilde;a para loggear al sistema</p></div>
+        <div>
+            <form role="form" action="" method="post" class="login-form">
+                <div class="form-group">
+                    <label class="sr-only" for="form-username" >Usuario</label>
+                    <input type="text" name="form-username" placeholder="Usuario..." class="form-username form-control" id="form-username" ng-model="loginCrtl.user" />
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-password">Contrase&ntilde;a</label>
+                    <input type="password" name="form-password" placeholder="Contrase&ntilde;a..." class="form-password form-control" id="form-password" ng-model="loginCrtl.password" />
+                </div>
+                <button type="button" id="ingresarLogin" class="btn btn-primary" ng-click="loginCrtl.loguear()">Ingresar!</button>
+            </form>
+        </div>
+    </div>
+</div>

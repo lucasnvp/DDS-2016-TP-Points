@@ -1,0 +1,50 @@
+<div>
+    <div>
+        <h0>Calificacion General: {{opinionesCtrol.calificacionGral}}</h0>
+    </div>
+
+    <div>
+        Tu opinion:
+        <div class="form-group label-placeholder">
+            <label for="i5p" class="control-label">Opinion</label>
+            <input type="text" class="form-control" id="i5p" ng-model="opinionesCtrol.opinion">
+        </div>
+
+        <div class="form-group">
+            <label for="select111" class="col-md-2 control-label">Calificacion</label>
+
+            <div class="col-md-10">
+                <select id="select111" class="form-control" ng-model="opinionesCtrol.calificacion">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <a class="btn btn-primary" ng-click="opinionesCtrol.enviar()">
+                Enviar
+            </a>
+        </div>
+
+    </div>
+
+    <div>
+        Opiniones:
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Usuario</th>
+                <th>Comentario</th>
+                <th>Calificacion</th>
+            </tr>
+            <tr ng-repeat="comentario in opinionesCtrol.comentarios">
+                <td>{{comentario.calificador}}</td>
+                <td>{{comentario.comentario}}</td>
+                <td>{{comentario.calificacion}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
